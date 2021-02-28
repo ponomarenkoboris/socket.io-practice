@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>SOCKET | SOCKET</title>
+</head>
+<body>
+    <div class="emits">
+        <h1>Emit message</h1>
+        <div class="container" style="display: flex; justify-content: space-around;">
+            <div class="input-warpper" style="display: flex; flex-direction: column;">
+                <h3>Input field</h3>
+                <textarea id="inputField" style="resize: none;" cols="30" rows="10"></textarea>
+                <button id="sendEmit" style="margin-top: 15px;">Emit messege</button>
+            </div>
+            <div class="output">
+                <h3>Output field</h3>
+                <textarea id="outputField" style="resize: none;" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="broadcast">
+        <h1>Broadcast</h1>
+        <div class="container"  style="display: flex; justify-content: space-around;">
+            <div class="input">
+                <h3>Input (Broadcast)</h3>
+                <textarea id="broadcastInput" class="g" style="resize: none;" cols="30" rows="10"></textarea>
+            </div>
+            <div class="output">
+                <h3>Output (Broadcast)</h3>
+                <textarea id="broadcastOutput" style="resize: none;" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="room">
+        <h1>Room</h1>
+        <div class="container" style="display: flex; justify-content: space-around;">
+            <div class="input">
+                <h3>Who is in the room?</h3>
+                <textarea id="roompeople" class="g" style="resize: none; width: 900px; height: auto;" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="./front.js"></script>
+</body>
+</html>
